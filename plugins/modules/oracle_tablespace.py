@@ -680,7 +680,7 @@ def manage_tablespace(module, msg, cursor, tablespace, state):
 
 
 # Drop the tablespace
-def drop_tablespace(msg, cursor, tablespace):
+def drop_tablespace(module, msg, cursor, tablespace):
 
     sql = 'drop tablespace %s including contents and datafiles' % tablespace
 
